@@ -33,7 +33,7 @@ public class FabricanteController {
 		return fabricanteServiceImpl.guardarFabricante(fabricante);
 	}
 	
-	@GetMapping("/clientes/{id}")
+	@GetMapping("/fabricantes/{id}")
 	public Fabricante clienteXID(@PathVariable(name="id") Long id) {
 		
 		Fabricante fabricante_xid= new Fabricante();
@@ -45,7 +45,7 @@ public class FabricanteController {
 		return fabricante_xid;
 	}
 	
-	@PutMapping("/clientes/{id}")
+	@PutMapping("/fabricantes/{id}")
 	public Fabricante actualizarCliente(@PathVariable(name="id")Long id,@RequestBody Fabricante cliente) {
 		
 		Fabricante fabricante_seleccionado= new Fabricante();
@@ -63,7 +63,7 @@ public class FabricanteController {
 		return fabricante_actualizado;
 	}
 	
-	@DeleteMapping("/clientes/{id}")
+	@DeleteMapping("/fabricantes/{id}")
 	public void eleiminarCliente(@PathVariable(name="id")Long id) {
 		fabricanteServiceImpl.eliminarFabricante(id);
 	}
