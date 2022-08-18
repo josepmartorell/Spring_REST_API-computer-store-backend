@@ -20,3 +20,5 @@ server/api/articulos/{id}
 ##
 ![Alt text](screenshots/screenshot-1.png)
 ![Alt text](screenshots/screenshot-2.png)
+![Alt text](screenshots/screenshot-3.png)
+![Alt text](screenshots/screenshot-4.png)
